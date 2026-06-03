@@ -30,7 +30,10 @@
 
 <div class="botoes">
     <button id="btnEntrar">Entrar</button>
-    <button id="btnCancelar">Cancelar</button>
+    <button onclick="window.location.href='index.html'">
+    Cancelar
+</button>
+    
 </div>
 
 <script>
@@ -48,10 +51,10 @@ function mostrarSenha() {
 }
 
 const senha = document.getElementById("senha");
-const btnContinuar = document.getElementById("btnContinuar");
+const btnEntrar = document.getElementById("btnEntrar");
 
 senha.addEventListener("input", function() {
-    btnentrar.disabled = senha.value.trim() === "";
+    btnEntrar.disabled = senha.value.trim() === "";
 });
 
 function entar() {
